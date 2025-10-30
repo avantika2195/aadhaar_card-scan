@@ -38,7 +38,7 @@ def extract_information(image):
     dob_pattern = r"(?:DOB|D0B|D08)[:\s]*([\d/:-]+)"
     aadhar_pattern = r"\b\d{4}\s?\d{4}\s?\d{4}\b"
 
-    # Extract Name
+    
     name_matches = re.findall(name_pattern, aadhaar_data)
     if name_matches:
         name = " ".join(name_matches).strip()
@@ -93,3 +93,4 @@ while True:
 
 # Release OpenCV resources
 cv2.destroyAllWindows()
+
