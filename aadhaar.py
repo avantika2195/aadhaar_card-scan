@@ -6,7 +6,7 @@ import re
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Load an image of the Aadhaar card
-# Replace 'khushi.jpeg' with the path to your Aadhaar card image
+# Replace 'test case/test1.jpeg' with the path to your Aadhaar card image
 image_path = 'test case/test1.jpg'
 image = cv2.imread(image_path)
 
@@ -66,3 +66,4 @@ with open("data.txt", "w") as file:
 
 # Release resources
 cv2.destroyAllWindows()
+
